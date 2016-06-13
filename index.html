@@ -131,20 +131,20 @@
 
 <p>need to create help/bitcoinrpc.md file</p>
 
-<h2 id="method-verifytx">method: verifytx</h2>
+<h2 id="method-getinfo">method: getinfo</h2>
 
 <p>put helpful info here</p>
 
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">verifytx</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">txid</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{hash}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">txbytes</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{str}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getinfo</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/verifytx?txid={hash}&amp;txbytes={str}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getinfo
 </code></pre>
 
 <table><thead>
@@ -154,16 +154,56 @@
 <th>Description</th>
 </tr>
 </thead><tbody>
+</tbody></table>
+
+<h2 id="method-getblockcount">method: getblockcount</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getblockcount</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getblockcount
+</code></pre>
+
+<table><thead>
 <tr>
-<td>txid</td>
-<td>hash</td>
-<td>no help info</td>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
 </tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-getbestblockhash">method: getbestblockhash</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getbestblockhash</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getbestblockhash
+</code></pre>
+
+<table><thead>
 <tr>
-<td>txbytes</td>
-<td>str</td>
-<td>no help info</td>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
 </tr>
+</thead><tbody>
 </tbody></table>
 
 <h2 id="method-getblockhash">method: getblockhash</h2>
@@ -301,20 +341,20 @@
 </tr>
 </tbody></table>
 
-<h2 id="method-decoderawtransaction">method: decoderawtransaction</h2>
+<h2 id="method-gettxout">method: gettxout</h2>
 
 <p>put helpful info here</p>
 
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">decoderawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rawtx</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">gettxout</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">txid</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{hash}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vout</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">mempool</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/decoderawtransaction?rawtx={string}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/gettxout?txid={hash}&amp;vout={int}&amp;mempool={int}
 </code></pre>
 
 <table><thead>
@@ -325,282 +365,17 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>rawtx</td>
-<td>string</td>
+<td>txid</td>
+<td>hash</td>
 <td>no help info</td>
 </tr>
-</tbody></table>
-
-<h2 id="method-getinfo">method: getinfo</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getinfo</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getinfo
-</code></pre>
-
-<table><thead>
 <tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-getbestblockhash">method: getbestblockhash</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getbestblockhash</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getbestblockhash
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-getblockcount">method: getblockcount</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getblockcount</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getblockcount
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-listaddressgroupings">method: listaddressgroupings</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listaddressgroupings</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listaddressgroupings
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-makekeypair">method: makekeypair</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">makekeypair</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/makekeypair
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-gettxoutsetinfo">method: gettxoutsetinfo</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">gettxoutsetinfo</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/gettxoutsetinfo
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-listlockunspent">method: listlockunspent</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listlockunspent</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listlockunspent
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-getrawchangeaddress">method: getrawchangeaddress</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getrawchangeaddress</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getrawchangeaddress
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-listaccounts">method: listaccounts</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listaccounts</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includewatchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listaccounts?minconf={int}&amp;includewatchonly={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>minconf</td>
+<td>vout</td>
 <td>int</td>
 <td>no help info</td>
 </tr>
 <tr>
-<td>includewatchonly</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-listreceivedbyaddress">method: listreceivedbyaddress</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listreceivedbyaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listreceivedbyaddress?minconf={int}&amp;includeempty={int}&amp;flag={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>minconf</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>includeempty</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>flag</td>
+<td>mempool</td>
 <td>int</td>
 <td>no help info</td>
 </tr>
@@ -646,6 +421,191 @@
 </tr>
 </tbody></table>
 
+<h2 id="method-decodescript">method: decodescript</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">decodescript</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">scriptstr</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/decodescript?scriptstr={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>scriptstr</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-decoderawtransaction">method: decoderawtransaction</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">decoderawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rawtx</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/decoderawtransaction?rawtx={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rawtx</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-createrawtransaction">method: createrawtransaction</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">createrawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vins</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vouts</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{object}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">locktime</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/createrawtransaction?vins={array}&amp;vouts={object}&amp;locktime={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>vins</td>
+<td>array</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>vouts</td>
+<td>object</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>locktime</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-makekeypair">method: makekeypair</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">makekeypair</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/makekeypair
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-validatepubkey">method: validatepubkey</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">validatepubkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">pubkey</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/validatepubkey?pubkey={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pubkey</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-validateaddress">method: validateaddress</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">validateaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/validateaddress?address={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
 <h2 id="method-walletlock">method: walletlock</h2>
 
 <p>put helpful info here</p>
@@ -671,70 +631,20 @@
 </thead><tbody>
 </tbody></table>
 
-<h2 id="method-checkwallet">method: checkwallet</h2>
+<h2 id="method-walletpassphrase">method: walletpassphrase</h2>
 
 <p>put helpful info here</p>
 
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">checkwallet</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">walletpassphrase</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">password</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">permanentfile</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">timeout</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/checkwallet
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-repairwallet">method: repairwallet</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">repairwallet</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/repairwallet
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-</tbody></table>
-
-<h2 id="method-dumpwallet">method: dumpwallet</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">dumpwallet</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">filename</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/dumpwallet?filename={string}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/walletpassphrase?password={string}&amp;permanentfile={string}&amp;timeout={int}
 </code></pre>
 
 <table><thead>
@@ -745,38 +655,18 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>filename</td>
+<td>password</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
-</tbody></table>
-
-<h2 id="method-backupwallet">method: backupwallet</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">backupwallet</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">filename</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/backupwallet?filename={string}
-</code></pre>
-
-<table><thead>
 <tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>filename</td>
+<td>permanentfile</td>
 <td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>int</td>
 <td>no help info</td>
 </tr>
 </tbody></table>
@@ -866,6 +756,66 @@
 </tr>
 </tbody></table>
 
+<h2 id="method-dumpwallet">method: dumpwallet</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">dumpwallet</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">filename</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/dumpwallet?filename={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>filename</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-backupwallet">method: backupwallet</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">backupwallet</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">filename</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/backupwallet?filename={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>filename</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
 <h2 id="method-importwallet">method: importwallet</h2>
 
 <p>put helpful info here</p>
@@ -891,106 +841,6 @@
 </thead><tbody>
 <tr>
 <td>filename</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-walletpassphrase">method: walletpassphrase</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">walletpassphrase</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">password</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">permanentfile</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">timeout</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/walletpassphrase?password={string}&amp;permanentfile={string}&amp;timeout={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>password</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>permanentfile</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>timeout</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-validateaddress">method: validateaddress</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">validateaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/validateaddress?address={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>address</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-validatepubkey">method: validatepubkey</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">validatepubkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">pubkey</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/validatepubkey?pubkey={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>pubkey</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
@@ -1026,20 +876,20 @@
 </tr>
 </tbody></table>
 
-<h2 id="method-vanitygen">method: vanitygen</h2>
+<h2 id="method-importprivkey">method: importprivkey</h2>
 
 <p>put helpful info here</p>
 
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">vanitygen</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vanity</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">importprivkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">wif</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rescan</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/vanitygen?vanity={string}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/importprivkey?wif={string}&amp;account={string}&amp;rescan={int}
 </code></pre>
 
 <table><thead>
@@ -1050,8 +900,348 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>vanity</td>
+<td>wif</td>
 <td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>rescan</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-dumpprivkey">method: dumpprivkey</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">dumpprivkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/dumpprivkey?address={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listtransactions">method: listtransactions</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listtransactions</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">count</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">skip</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includewatchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listtransactions?account={string}&amp;count={int}&amp;skip={int}&amp;includewatchonly={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>count</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includewatchonly</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listreceivedbyaddress">method: listreceivedbyaddress</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listreceivedbyaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listreceivedbyaddress?minconf={int}&amp;includeempty={int}&amp;flag={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>minconf</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includeempty</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listreceivedbyaccount">method: listreceivedbyaccount</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listreceivedbyaccount</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">confirmations</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">watchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listreceivedbyaccount?confirmations={int}&amp;includeempty={int}&amp;watchonly={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>confirmations</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includeempty</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>watchonly</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listaccounts">method: listaccounts</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listaccounts</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includewatchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listaccounts?minconf={int}&amp;includewatchonly={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>minconf</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includewatchonly</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listaddressgroupings">method: listaddressgroupings</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listaddressgroupings</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listaddressgroupings
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-getreceivedbyaddress">method: getreceivedbyaddress</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getreceivedbyaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getreceivedbyaddress?address={string}&amp;minconf={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>minconf</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-getreceivedbyaccount">method: getreceivedbyaccount</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getreceivedbyaccount</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getreceivedbyaccount?account={string}&amp;includeempty={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includeempty</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-getbalance">method: getbalance</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getbalance</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">confirmations</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">lastheight</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getbalance?account={string}&amp;confirmations={int}&amp;includeempty={int}&amp;lastheight={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>confirmations</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>includeempty</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>lastheight</td>
+<td>int</td>
 <td>no help info</td>
 </tr>
 </tbody></table>
@@ -1146,66 +1336,6 @@
 </tr>
 </tbody></table>
 
-<h2 id="method-dumpprivkey">method: dumpprivkey</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">dumpprivkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/dumpprivkey?address={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>address</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-decodescript">method: decodescript</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">decodescript</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">script</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/decodescript?script={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>script</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
 <h2 id="method-setaccount">method: setaccount</h2>
 
 <p>put helpful info here</p>
@@ -1236,6 +1366,211 @@
 </tr>
 <tr>
 <td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-createmultisig">method: createmultisig</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">createmultisig</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">M</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">pubkeys</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">ignore</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/createmultisig?M={int}&amp;pubkeys={array}&amp;ignore={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>M</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>pubkeys</td>
+<td>array</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>ignore</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-addmultisigaddress">method: addmultisigaddress</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">addmultisigaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">M</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">pubkeys</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/addmultisigaddress?M={int}&amp;pubkeys={array}&amp;account={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>M</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>pubkeys</td>
+<td>array</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>account</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-settxfee">method: settxfee</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">settxfee</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">amount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/settxfee?amount={float}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-checkwallet">method: checkwallet</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">checkwallet</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/checkwallet
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-repairwallet">method: repairwallet</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">repairwallet</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/repairwallet
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-signrawtransaction">method: signrawtransaction</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">signrawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rawtx</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vins</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">privkeys</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{object}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">sighash</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/signrawtransaction?rawtx={string}&amp;vins={array}&amp;privkeys={object}&amp;sighash={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rawtx</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>vins</td>
+<td>array</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>privkeys</td>
+<td>object</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>sighash</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
@@ -1316,196 +1651,6 @@
 </tr>
 </tbody></table>
 
-<h2 id="method-listreceivedbyaccount">method: listreceivedbyaccount</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listreceivedbyaccount</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">confirmations</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">watchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listreceivedbyaccount?confirmations={int}&amp;includeempty={int}&amp;watchonly={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>confirmations</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>includeempty</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>watchonly</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-getbalance">method: getbalance</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getbalance</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">confirmations</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">watchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getbalance?confirmations={int}&amp;includeempty={int}&amp;watchonly={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>confirmations</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>includeempty</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>watchonly</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-importprivkey">method: importprivkey</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">importprivkey</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">wif</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rescan</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/importprivkey?wif={string}&amp;account={string}&amp;rescan={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>wif</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>account</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>rescan</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-getreceivedbyaccount">method: getreceivedbyaccount</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getreceivedbyaccount</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includeempty</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getreceivedbyaccount?account={string}&amp;includeempty={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>account</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>includeempty</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-getreceivedbyaddress">method: getreceivedbyaddress</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getreceivedbyaddress</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getreceivedbyaddress?address={string}&amp;minconf={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>address</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>minconf</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
 <h2 id="method-sendrawtransaction">method: sendrawtransaction</h2>
 
 <p>put helpful info here</p>
@@ -1541,20 +1686,20 @@
 </tr>
 </tbody></table>
 
-<h2 id="method-listsinceblock">method: listsinceblock</h2>
+<h2 id="method-submitblock">method: submitblock</h2>
 
 <p>put helpful info here</p>
 
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listsinceblock</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">blockhash</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{hash}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">target</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">submitblock</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rawbytes</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listsinceblock?blockhash={hash}&amp;target={int}&amp;flag={int}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/submitblock?rawbytes={string}
 </code></pre>
 
 <table><thead>
@@ -1565,332 +1710,7 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>blockhash</td>
-<td>hash</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>target</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>flag</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-listtransactions">method: listtransactions</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listtransactions</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">count</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">skip</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">includewatchonly</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listtransactions?account={string}&amp;count={int}&amp;skip={int}&amp;includewatchonly={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>account</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>count</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>skip</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>includewatchonly</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-gettxout">method: gettxout</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">gettxout</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">txid</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{hash}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vout</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">mempool</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/gettxout?txid={hash}&amp;vout={int}&amp;mempool={int}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>txid</td>
-<td>hash</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>vout</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>mempool</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-settxfee">method: settxfee</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">settxfee</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">amount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/settxfee?amount={float}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>amount</td>
-<td>float</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-lockunspent">method: lockunspent</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">lockunspent</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">array</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/lockunspent?flag={int}&amp;array={array}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>flag</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>array</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-createmultisig">method: createmultisig</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">createmultisig</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">M</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">array</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">account</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/createmultisig?M={int}&amp;array={array}&amp;account={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>M</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>array</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>account</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-createrawtransaction">method: createrawtransaction</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">createrawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vins</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vouts</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/createrawtransaction?vins={array}&amp;vouts={array}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>vins</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>vouts</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-signrawtransaction">method: signrawtransaction</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">signrawtransaction</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">rawtx</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">vins</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">privkeys</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/signrawtransaction?rawtx={string}&amp;vins={array}&amp;privkeys={array}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>rawtx</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>vins</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>privkeys</td>
-<td>array</td>
-<td>no help info</td>
-</tr>
-</tbody></table>
-
-<h2 id="method-move">method: move</h2>
-
-<p>put helpful info here</p>
-
-<blockquote>
-<p>Shell command format:</p>
-</blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">move</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">fromaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">toaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">amount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">comment</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre>
-
-<blockquote>
-<p>HTTP API call format:</p>
-</blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/move?fromaccount={string}&amp;toaccount={string}&amp;amount={float}&amp;minconf={int}&amp;comment={string}
-</code></pre>
-
-<table><thead>
-<tr>
-<th>field</th>
-<th>value type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>fromaccount</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>toaccount</td>
-<td>string</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>amount</td>
-<td>float</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>minconf</td>
-<td>int</td>
-<td>no help info</td>
-</tr>
-<tr>
-<td>comment</td>
+<td>rawbytes</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
@@ -1958,13 +1778,13 @@
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">sendmany</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">fromaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">array</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">comment</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">sendmany</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">fromaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">payments</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">comment</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/sendmany?fromaccount={string}&amp;array={array}&amp;minconf={int}&amp;comment={string}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/sendmany?fromaccount={string}&amp;payments={array}&amp;minconf={int}&amp;comment={string}
 </code></pre>
 
 <table><thead>
@@ -1980,7 +1800,7 @@
 <td>no help info</td>
 </tr>
 <tr>
-<td>array</td>
+<td>payments</td>
 <td>array</td>
 <td>no help info</td>
 </tr>
@@ -2041,9 +1861,239 @@
 </tr>
 </tbody></table>
 
+<h2 id="method-lockunspent">method: lockunspent</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">lockunspent</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">array</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{array}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/lockunspent?flag={int}&amp;array={array}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>flag</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>array</td>
+<td>array</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-listlockunspent">method: listlockunspent</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listlockunspent</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listlockunspent
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-listsinceblock">method: listsinceblock</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">listsinceblock</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">blockhash</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{hash}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">target</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">flag</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/listsinceblock?blockhash={hash}&amp;target={int}&amp;flag={int}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>blockhash</td>
+<td>hash</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>target</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-gettxoutsetinfo">method: gettxoutsetinfo</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">gettxoutsetinfo</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/gettxoutsetinfo
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-getrawchangeaddress">method: getrawchangeaddress</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">getrawchangeaddress</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/getrawchangeaddress
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h2 id="method-move">method: move</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">bitcoinrpc</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">move</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">fromaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">toaccount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">amount</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconf</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">comment</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/bitcoinrpc/move?fromaccount={string}&amp;toaccount={string}&amp;amount={float}&amp;minconf={int}&amp;comment={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>fromaccount</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>toaccount</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>minconf</td>
+<td>int</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>comment</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
 <h1 id="iguana-api">iguana API</h1>
 
 <p>need to create help/iguana.md file</p>
+
+<h2 id="method-initfastfind">method: initfastfind</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">iguana</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">initfastfind</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">activecoin</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/iguana/initfastfind?activecoin={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>activecoin</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
 
 <h2 id="method-peers">method: peers</h2>
 
@@ -2502,13 +2552,13 @@
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">iguana</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">balance</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">activecoin</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">height</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{int}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">iguana</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">balance</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">activecoin</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">address</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">heightd</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">minconfd</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{float}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/iguana/balance?activecoin={string}&amp;address={string}&amp;height={int}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/iguana/balance?activecoin={string}&amp;address={string}&amp;heightd={float}&amp;minconfd={float}
 </code></pre>
 
 <table><thead>
@@ -2529,8 +2579,13 @@
 <td>no help info</td>
 </tr>
 <tr>
-<td>height</td>
-<td>int</td>
+<td>heightd</td>
+<td>float</td>
+<td>no help info</td>
+</tr>
+<tr>
+<td>minconfd</td>
+<td>float</td>
 <td>no help info</td>
 </tr>
 </tbody></table>
@@ -4847,13 +4902,13 @@
 <blockquote>
 <p>Shell command format:</p>
 </blockquote>
-<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">SuperNET</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">encryptjson</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">password</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">permanentfile</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">anything</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">SuperNET</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">encryptjson</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">password</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">permanentfile</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">payload</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
 </code></pre>
 
 <blockquote>
 <p>HTTP API call format:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/SuperNET/encryptjson?password={string}&amp;permanentfile={string}&amp;anything={string}
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/SuperNET/encryptjson?password={string}&amp;permanentfile={string}&amp;payload={string}
 </code></pre>
 
 <table><thead>
@@ -4874,7 +4929,7 @@
 <td>no help info</td>
 </tr>
 <tr>
-<td>anything</td>
+<td>payload</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
@@ -5130,6 +5185,36 @@
 </thead><tbody>
 <tr>
 <td>wif</td>
+<td>string</td>
+<td>no help info</td>
+</tr>
+</tbody></table>
+
+<h2 id="method-priv2wif">method: priv2wif</h2>
+
+<p>put helpful info here</p>
+
+<blockquote>
+<p>Shell command format:</p>
+</blockquote>
+<pre class="highlight shell"><code>curl --url <span class="s2">"http://127.0.0.1:7778"</span> --data <span class="s2">"{</span><span class="se">\"</span><span class="s2">agent</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">SuperNET</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">method</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">priv2wif</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">priv</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">{string}</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre>
+
+<blockquote>
+<p>HTTP API call format:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>http://127.0.0.1:7778/api/SuperNET/priv2wif?priv={string}
+</code></pre>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>value type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>priv</td>
 <td>string</td>
 <td>no help info</td>
 </tr>
