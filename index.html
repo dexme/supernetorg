@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 14:13:16 2016-Aug-23</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 07:08:36 2016-Aug-24</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -1954,7 +1954,21 @@
 
 <h2 id="method-sendfrom">method: sendfrom</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support. Requires an unlocked wallet or an unencrypted wallet. The sendfrom RPC spends an amount from a local account to a bitcoin address. </p>
+
+<p>Parameter #1—from account. </p>
+
+<p>Parameter #2—to address. </p>
+
+<p>Parameter #3—amount to spend. </p>
+
+<p>Parameter #4—minimum confirmations. </p>
+
+<p>Parameter #5—a comment. </p>
+
+<p>Parameter #6—a comment about who the payment was sent to. </p>
+
+<p>Result—a TXID of the sent transaction.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -1978,7 +1992,7 @@
 <tr>
 <td>fromaccount</td>
 <td>string</td>
-<td>no help info</td>
+<td>The name of the account from which the bitcoins should be spent. Use an empty string (“”) for the default account.</td>
 </tr>
 <tr>
 <td>toaddress</td>
@@ -1988,22 +2002,22 @@
 <tr>
 <td>amount</td>
 <td>float</td>
-<td>no help info</td>
+<td>The amount to spend in bitcoins. Bitcoin Core will ensure the account has sufficient bitcoins to pay this amount (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee).</td>
 </tr>
 <tr>
 <td>minconf</td>
 <td>int</td>
-<td>no help info</td>
+<td>The minimum number of confirmations an incoming transaction must have for its outputs to be credited to this account’s balance. Outgoing transactions are always counted, as are move transactions made with the move RPC. If an account doesn’t have a balance high enough to pay for this transaction, the payment will be rejected. Use 0 to spend unconfirmed incoming payments. Default is 1.</td>
 </tr>
 <tr>
 <td>comment</td>
 <td>string</td>
-<td>no help info</td>
+<td>A locally-stored (not broadcast) comment assigned to this transaction. Default is no comment.</td>
 </tr>
 <tr>
 <td>comment2</td>
 <td>string</td>
-<td>no help info</td>
+<td>A locally-stored (not broadcast) comment assigned to this transaction. Meant to be used for describing who the payment was sent to. Default is no comment.</td>
 </tr>
 </tbody></table>
 
@@ -2054,7 +2068,17 @@
 
 <h2 id="method-sendtoaddress">method: sendtoaddress</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support. Requires an unlocked wallet or an unencrypted wallet.The sendtoaddress RPC spends an amount to a given address. </p>
+
+<p>Parameter #1—to address. </p>
+
+<p>Parameter #2—amount to spend. </p>
+
+<p>Parameter #3—a comment. </p>
+
+<p>Parameter #4—a comment about who the payment was sent to. </p>
+
+<p>Result—a TXID of the sent transaction.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2078,28 +2102,34 @@
 <tr>
 <td>address</td>
 <td>string</td>
-<td>no help info</td>
+<td>A P2PKH or P2SH address to which the bitcoins should be sent.</td>
 </tr>
 <tr>
 <td>amount</td>
 <td>float</td>
-<td>no help info</td>
+<td>The amount to spent in bitcoins.</td>
 </tr>
 <tr>
 <td>comment</td>
 <td>string</td>
-<td>no help info</td>
+<td>A locally-stored (not broadcast) comment assigned to this transaction. Default is no comment.</td>
 </tr>
 <tr>
 <td>comment2</td>
 <td>string</td>
-<td>no help info</td>
+<td>A locally-stored (not broadcast) comment assigned to this transaction. Meant to be used for describing who the payment was sent to. Default is no comment.</td>
 </tr>
 </tbody></table>
 
 <h2 id="method-lockunspent">method: lockunspent</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support.The lockunspent RPC temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending bitcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails.</p>
+
+<p>Parameter #1—whether to lock or unlock the outputs. </p>
+
+<p>Parameter #2—the outputs to lock or unlock. </p>
+
+<p>Result—true if successful.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2123,18 +2153,22 @@
 <tr>
 <td>flag</td>
 <td>int</td>
-<td>no help info</td>
+<td>Set to 0 to lock the outputs specified in the following parameter. Set to 1 to unlock the outputs specified. If this is the only argument specified and it is set to true, all outputs will be unlocked; if it is the only argument and is set to false, there will be no change.</td>
 </tr>
 <tr>
 <td>array</td>
 <td>array</td>
-<td>no help info</td>
+<td>An array of outputs to lock or unlock.</td>
 </tr>
 </tbody></table>
 
 <h2 id="method-listlockunspent">method: listlockunspent</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support.The listlockunspent RPC returns a list of temporarily unspendable (locked) outputs. </p>
+
+<p>Parameters: none. </p>
+
+<p>Result—an array of locked outputs.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2159,7 +2193,15 @@
 
 <h2 id="method-listsinceblock">method: listsinceblock</h2>
 
-<p>put helpful info here</p>
+<p>The listsinceblock RPC gets all transactions affecting the wallet which have occurred since a particular block, plus the header hash of a block at a particular depth. </p>
+
+<p>Parameter #1—a block header hash. </p>
+
+<p>Parameter #2—the target confirmations for the lastblock field. </p>
+
+<p>Parameter #3—whether to include watch-only addresses in details and calculations. </p>
+
+<p>Result— An object containing an array of transactions and the lastblock field.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2183,23 +2225,27 @@
 <tr>
 <td>blockhash</td>
 <td>hash</td>
-<td>no help info</td>
+<td>put in helpful info field0</td>
 </tr>
 <tr>
 <td>target</td>
 <td>int</td>
-<td>no help info</td>
+<td>put in helpful info for field1</td>
 </tr>
 <tr>
 <td>flag</td>
 <td>int</td>
-<td>no help info</td>
+<td>put helpful info</td>
 </tr>
 </tbody></table>
 
 <h2 id="method-gettxoutsetinfo">method: gettxoutsetinfo</h2>
 
-<p>put helpful info here</p>
+<p>The gettxoutsetinfo RPC returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions—it does not count outputs from the memory pool. </p>
+
+<p>Parameters: none. </p>
+
+<p>Result—statistics about the UTXO set.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2224,7 +2270,11 @@
 
 <h2 id="method-getrawchangeaddress">method: getrawchangeaddress</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support. The getrawchangeaddress RPC returns a new Bitcoin address for receiving change. This is for use with raw transactions, not normal use. </p>
+
+<p>Parameters: none. </p>
+
+<p>Result—a P2PKH address which can be used in raw transactions.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2249,7 +2299,19 @@
 
 <h2 id="method-move">method: move</h2>
 
-<p>put helpful info here</p>
+<p>Requires wallet support.The move RPC moves a specified amount from one account in your wallet to another using an off-block-chain transaction. </p>
+
+<p>Parameter #1—from account. </p>
+
+<p>Parameter #2—to account. </p>
+
+<p>Parameter #3—amount to move. </p>
+
+<p>Parameter #4—an unused parameter.</p>
+
+<p>Parameter #5—a comment. </p>
+
+<p>Result—true on success.</p>
 
 <blockquote>
 <p>Shell command format:</p>
@@ -2273,27 +2335,27 @@
 <tr>
 <td>fromaccount</td>
 <td>string</td>
-<td>no help info</td>
+<td>The name of the account to move the funds from.</td>
 </tr>
 <tr>
 <td>toaccount</td>
 <td>string</td>
-<td>no help info</td>
+<td>The name of the account to move the funds to.</td>
 </tr>
 <tr>
 <td>amount</td>
 <td>float</td>
-<td>no help info</td>
+<td>The amount of bitcoins to move.</td>
 </tr>
 <tr>
 <td>minconf</td>
 <td>int</td>
-<td>no help info</td>
+<td>This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer.</td>
 </tr>
 <tr>
 <td>comment</td>
 <td>string</td>
-<td>no help info</td>
+<td>A comment to assign to this move payment.</td>
 </tr>
 </tbody></table>
 
