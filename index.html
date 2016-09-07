@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 14:14:49 2016-Sep-06</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 07:16:57 2016-Sep-07</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -7764,6 +7764,272 @@
 <ul>
 <li><p><a href='https://bitcoin.org/en/developer-guide#block-chain-overview'>Block</a> — Bitcoin.org Developer Guide</p></li>
 <li><p><a href='https://en.bitcoin.it/wiki/Block'>Block</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="block-0">Block 0</h2>
+
+<p><b>Genesis Block, Block 0</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The first block in the Bitcoin block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Genesis block</p></li>
+<li><p>Block 0</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Generation transaction (the first transaction in a block)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-genesis-block'>Genesis block</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Genesis_block'>Genesis block</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/10009/why-can-t-the-genesis-block-coinbase-be-spent'>Why can’t the genesis block coinbase transaction be spent?</a> — Bitcoin StackExchange </p></li>
+</ul>
+
+<h2 id="block-chain">Block Chain</h2>
+
+<p><b>Block Chain</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Block chain</p></li>
+<li><p>Best block chain</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Header chain</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#block-chain'>Block chain</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Block_chain'>Block chain</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="block-header">Block Header</h2>
+
+<p><b>Block Header</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Block header</p></li>
+<li><p>Header</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#block-headers'>Block header</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Block_hashing_algorithm'>Block hashing algorithm</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/8031/what-are-bitcoin-miners-really-solving'>What are Bitcoin miners really solving?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="block-height">Block Height</h2>
+
+<p><b>Block Chain Height, Block Height</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The number of blocks preceding a particular block on a block chain. For example, the genesis block has a height of zero because zero block preceded it.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Height</p></li>
+<li><p>Block height</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-block-height'>Block height</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/18561/definition-of-blockchain-height'>Definition of block height</a> — Bitcoin StackExchange</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/30764/why-block-height-is-required-in-coinbase'>Why is block height required in the coinbase?</a> — Bitcoin StackExchange</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/24309/is-block-height-always-sequential'>Is block height always sequencial?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="block-reward">Block Reward</h2>
+
+<p><b>Block Reward, Block Miner Reward</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The amount that miners may claim as a reward for creating a block. Equal to the sum of the block subsidy (newly available satoshis) plus the transactions fees paid by transactions included in the block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Block reward</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Block subsidy</p></li>
+<li><p>Transaction fees</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-reference#term-block-reward'>Block reward</a> — Bitcoin.org Developer Reference</li>
+</ul>
+
+<h2 id="blocks-first-sync">Blocks-First Sync</h2>
+
+<p><b>Blocks-First, Blocks-First Sync</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Synchronizing the block chain by downloading each block from a peer and then validating it.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Blocks-first sync</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Headers-first sync</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#blocks-first'>Blocks-first sync</a> — Bitcoin.org Developer Guide</li>
+</ul>
+
+<h2 id="bloom-filter">Bloom Filter</h2>
+
+<p><b>Bloom Filter</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A filter used primarily by SPV clients to request only matching transactions and merkle blocks from full nodes.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Bloom filter</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Bloom filter (general computer science term, of which Bitcoin’s bloom filters are a specific implementation)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#bloom-filters'>Bloom filter</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki'>BIP37: Connection Bloom Filtering </a>— Bitcoin Improvement Proposals</p></li>
+<li><p><a href='https://github.com/bitcoin/bitcoin/pull/1795'>Pull request that implemented bloom filters in Bitcoin Core </a> — GitHub</p></li>
+<li><p><a href='https://bitcointalk.org/index.php?topic=252937.0'>Discussion about bloom filtering and SPV clients</a> — BitcoinTalk</p></li>
+</ul>
+
+<h2 id="chain-code">Chain Code</h2>
+
+<p><b>Chain Code, HD Wallet Chain Code</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, 256 bits of entropy added to the public and private keys to help them generate secure child keys; the master chain code is usually derived from a seed along with the master private key</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Chain code</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-chain-code'>Chain code</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: Hierarchical Deterministic Wallets</a> — Bitcoin Improvement Proposals</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Deterministic_wallet'>Deterministic wallet</a> — Bitcoin wiki</p></li>
+</ul>
+
+<h2 id="change-address">Change Address</h2>
+
+<p><b>Change, Change Address, Change Output</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>An output in a transaction which returns satoshis to the spender, thus preventing too much of the input value from going to transaction fees.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Change address</p></li>
+<li><p>Change output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Address reuse</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-change-output'>Change address</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Change'>Change</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/35412/why-does-bitcoin-use-separate-change-addresses'>Why does Bitcoin Core use separate change addresses?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="change-output">Change Output</h2>
+
+<p><b>Change, Change Address, Change Output</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>An output in a transaction which returns satoshis to the spender, thus preventing too much of the input value from going to transaction fees.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Change address</p></li>
+<li><p>Change output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Address reuse</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#transaction-fees-and-change'>Change address</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Change'>Change</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/35412/why-does-bitcoin-use-separate-change-addresses'>Why does Bitcoin Core use separate change addresses?</a> — Bitcoin StackExchange</p></li>
 </ul>
 
       </div>
