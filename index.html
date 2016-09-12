@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 10:32:31 2016-Sep-09</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 14:58:46 2016-Sep-12</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -8923,6 +8923,817 @@
 <ul>
 <li><p><a href='https://bitcoin.org/en/developer-guide#term-high-priority-transactions'>High-priority transactions</a> — Bitcoin.org Developer Guide</p></li>
 <li><p><a href='https://en.bitcoin.it/wiki/Free_transaction_relay_policy'>Free transaction relay policy</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="ibd">IBD</h2>
+
+<p><b>Initial Block Download, IBD</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Initial block download</p></li>
+<li><p>IBD</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Blocks-first sync (syncing includes getting any amount of blocks; IBD is only used for large numbers of blocks)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#initial-block-download'>Initial block download</a> — Bitcoin.org Developer Guide</li>
+</ul>
+
+<h2 id="initial-block-download">Initial Block Download</h2>
+
+<p><b>Initial Block Download, IBD</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Initial block download</p></li>
+<li><p>IBD</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Blocks-first sync (syncing includes getting any amount of blocks; IBD is only used for large numbers of blocks)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#initial-block-download'>Initial block download</a> — Bitcoin.org Developer Guide</li>
+</ul>
+
+<h2 id="input">Input</h2>
+
+<p><b>Input, Transaction Input, TxIn</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>An input in a transaction which contains four fields: an outpoint, a signature script, and a sequence number. The outpoint references a previous output and the signature script allows spending it.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Input</p></li>
+<li><p>TxIn</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-input'>Input</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://bitcoin.org/en/developer-reference#txin'>TxIn</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Transaction#Input'>Inputs</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="internal-byte-order">Internal Byte Order</h2>
+
+<p><b>Internal Byte Order</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The standard order in which hash digests are displayed as strings—the same format used in serialized blocks and transactions.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Internal byte order</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>RPC byte order (where the byte order is reversed)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#hash-byte-order'>Internal byte order</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Block_hashing_algorithm'>Block hashing algorithm (‘endian conversion’)</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="inventory">Inventory</h2>
+
+<p><b>Inventory, Block Or Transaction Inventory</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Inventory</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Inv message (one of the P2P messages that transmits inventories)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#term-inventory'>Inventory</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#Inventory_Vectors'>Inventory vectors</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="lightweight-client">Lightweight Client</h2>
+
+<p><b>SPV, Simplified Payment Verification</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A method for verifying particular transactions were included in a block without downloading the entire block. The method is used by some lightweight Bitcoin clients.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>SPV</p></li>
+<li><p>Simplified Payment Verification</p></li>
+<li><p>Lightweight client</p></li>
+<li><p>Thin client</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#simplified-payment-verification-spv'>SPV</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Thin_Client_Security'>Thin client security</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/32529/what-is-a-thin-client'>What is a thin client?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="locktime">Locktime</h2>
+
+<p><b>Locktime, nLockTime</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Part of a transaction which indicates the earliest time or earliest block when that transaction may be added to the block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Locktime</p></li>
+<li><p>nLockTime</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-locktime'>Locktime</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/NLockTime'>nLockTime</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5914/how-is-locktime-enforced-in-the-standard-client'>How is locktime enforced in Bitcoin Core?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="mainnet">Mainnet</h2>
+
+<p><b>Mainnet, Bitcoin Main Network</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The original and main network for Bitcoin transactions, where satoshis have real economic value.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Mainnet</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Testnet (an open network very similar to mainnet where satoshis have no value)</p></li>
+<li><p>Regtest (a private testing node similar to testnet)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-examples#term-mainnet'>Mainnet</a> — Bitcoin.org Developer Examples</li>
+</ul>
+
+<h2 id="majority-attack">Majority Attack</h2>
+
+<p><b>51% Attack, Majority Hash Rate Attack</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The ability of someone controlling a majority of network hash rate to revise transaction history and prevent new transactions from confirming.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>51 percent attack</p></li>
+<li><p>Majority attack</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#term-51-attack'>51% attack</a> — Bitcoin.org Developer Guide</li>
+<li><a href='http://bitcoin.stackexchange.com/questions/658/what-can-an-attacker-with-51-of-hash-power-do'>What can an attacker with 51% of hash power do?</a> — Bitcoin StackExchange</li>
+<li><a href='https://bitcoin.org/en/bitcoin-paper'>Bitcoin.pdf</a> — Satoshi Nakamoto (Bitcoin.org)</li>
+</ul>
+
+<h2 id="master-chain-code">Master Chain Code</h2>
+
+<p><b>Master Chain Code And Private Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, the master chain code and master private key are the two pieces of data derived from the root seed.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Master chain code</p></li>
+<li><p>Master private key</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-master-chain-code'>Master chain code</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://bitcoin.org/en/developer-guide#hierarchical-deterministic-key-creation'>Master private key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="master-private-key">Master Private Key</h2>
+
+<p><b>Master Chain Code And Private Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, the master chain code and master private key are the two pieces of data derived from the root seed.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Master chain code</p></li>
+<li><p>Master private key</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-master-chain-code'>Master chain code</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://bitcoin.org/en/developer-guide#hierarchical-deterministic-key-creation'>Master private key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="merkle-block">Merkle Block</h2>
+
+<p><b>Merkle Block</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A partial merkle tree connecting transactions matching a bloom filter to the merkle root of a block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Merkle block</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>MerkleBlock message (a P2P protocol message that transmits a merkle block)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#merkleblock'>Merkle block</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#filterload.2C_filteradd.2C_filterclear.2C_merkleblock'>MerkleBlock P2P protocol message</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="merkle-root">Merkle Root</h2>
+
+<p><b>Merkle Root</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The root node of a merkle tree, a descendant of all the hashed pairs in the tree. Block headers must include a valid merkle root descended from all transactions in that block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Merkle root</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Merkle tree (the tree of which the merkle root is the root node)</p></li>
+<li><p>Merkle block (a partial merkle branch connecting the root to one or more leaves transactions)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-merkle-root'>Merkle root</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#Merkle_Trees'>Merkle trees</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/10479/what-is-the-merkle-root'>What is the merkle root?</a> — Bitcoin StackExchange</p></li>
+<li><p><a href='https://en.wikipedia.org/wiki/Merkle_tree'>Merkle tree</a> — Wikipedia</p></li>
+</ul>
+
+<h2 id="merkle-tree">Merkle Tree</h2>
+
+<p><b>Merkle Tree</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A tree constructed by hashing paired data (the leaves), then pairing and hashing the results until a single hash remains, the merkle root. In Bitcoin, the leaves are almost always transactions from a single block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Merkle tree</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Partial merkle branch (a branch connecting one or more leaves to the root)</p></li>
+<li><p>Merkle block (a partial merkle branch connecting one or more transactions from a single block to the block merkle root)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-merkle-tree'>Merkle tree</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#Merkle_Trees'>Merkle trees</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/1110/how-do-i-implement-a-merkle-tree'>How do I implement a merkle tree?</a> — Bitcoin StackExchange</p></li>
+<li><p><a href='https://en.wikipedia.org/wiki/Merkle_tree'>Merkle tree</a> — Wikipedia</p></li>
+</ul>
+
+<h2 id="message-header">Message Header</h2>
+
+<p><b>Message Header</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The four header fields prefixed to all messages on the Bitcoin P2P network.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Message header</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#message-headers'>Message headers</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure'>Message structure</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/22882/what-is-the-function-of-the-payload-checksum-field-in-the-bitcoin-protocol'>What is the function of the payload checksum in message headers?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="miner">Miner</h2>
+
+<p><b>Mining, Miner</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Mining</p></li>
+<li><p>Miner</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-miner'>Mining</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Mining'>Mining</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/148/what-exactly-is-mining'>What exactly is mining?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="miners-fee">Miners Fee</h2>
+
+<p><b>Transaction Fee, Miner Fee</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Transaction fee</p></li>
+<li><p>Miners fee</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Minimum relay fee (the lowest fee a transaction must pay to be accepted into the memory pool and relayed by Bitcoin Core nodes)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-transaction-fee'>Transaction fee</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Transaction_fees'>Transaction fees</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/1195/how-to-calculate-transaction-size-before-sending'>How to calculate transaction fees before sending?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="minimum-relay-fee">Minimum Relay Fee</h2>
+
+<p><b>Minimum Relay Fee</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The minimum transaction fee a transaction must pay (if it isn’t a high-priority transaction) for a full node to relay that transaction to other nodes. There is no one minimum relay fee—each node chooses its own policy.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Minimum relay fee</p></li>
+<li><p>Relay fee</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Transaction fee (the minimum relay fee is a policy setting that filters out transactions with too-low transaction fees)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-minimum-fee'>Minimum relay fee</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Transaction_fees'>Transaction fees</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="mining">Mining</h2>
+
+<p><b>Mining, Miner</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Mining</p></li>
+<li><p>Miner</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#block-chain-overview'>Mining</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Mining'>Mining</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/148/what-exactly-is-mining'>What exactly is mining?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="multisig">Multisig</h2>
+
+<p><b> M-of-N Multisig, Multisig Output<M-of-N Multisig, Multisig Output</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A pubkey script that provides n number of pubkeys and requires the corresponding signature script provide m minimum number signatures corresponding to the provided pubkeys.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Multisig</p></li>
+<li><p>Bare multisig</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>P2SH multisig (a multisig script contained inside P2SH)</p></li>
+<li><p>Advanced scripts that require multiple signatures without using OP_CHECKMULTISIG or OP_CHECKMULTISIGVERIFY</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-multisig'>Multisig</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki'>BIP11: m-of-n standard transactions</a> — Bitcoin Improvement Proposals</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/3718/what-are-multi-signature-transactions'>What are multi-signature transactions?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="nbits">nBits</h2>
+
+<p><b>nBits, Target Threshold</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>nBits</p></li>
+<li><p>Target</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Difficulty (a number measuring the difficulty of finding a header hash relative to the difficulty of finding a header hash with the easiest target)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-target'>Target</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://bitcoin.org/en/developer-reference#target-nbits'>nBits</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Target'>Target</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/23912/how-is-the-target-section-of-a-block-header-calculated'>How is the target section of the block header calculated?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="network-difficulty">Network Difficulty</h2>
+
+<p><b>Difficulty, Network Difficulty</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>How difficult it is to find a block relative to the difficulty of finding the easiest possible block. The easiest possible block has a proof-of-work difficulty of 1.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Difficulty</p></li>
+<li><p>Network difficulty</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Target threshold (the value from which difficulty is calculated)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-difficulty'>Difficulty</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Difficulty'>Difficulty</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5838/how-is-difficulty-calculated'>How is difficulty calculated?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="network-magic">Network Magic</h2>
+
+<p><b>Start String, Network Magic</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<ul>
+<li>Four defined bytes which start every message in the Bitcoin P2P protocol to allow seeking to the next message.</li>
+</ul>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Start string</p></li>
+<li><p>Network magic</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#term-start-string'>Start string</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/2337/how-was-the-magic-network-id-value-chosen'>How was the start string chosen?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="nlocktime">NLockTime</h2>
+
+<p><b>Locktime, nLockTime</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Part of a transaction which indicates the earliest time or earliest block when that transaction may be added to the block chain.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Locktime</p></li>
+<li><p>nLockTime</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#locktime-and-sequence-number'>Locktime</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/NLockTime'>nLockTime</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5914/how-is-locktime-enforced-in-the-standard-client'>How is locktime enforced in Bitcoin Core?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="non-data-pushing-opcode">Non-data-pushing opcode</h2>
+
+<p><b>Opcode</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Opcode</p></li>
+<li><p>Data-pushing opcode</p></li>
+<li><p>Non-data-pushing opcode</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#opcodes'>Opcodes</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Script'>List of opcodes</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="null-data-transaction">Null Data Transaction</h2>
+
+<p><b>Null Data (OP_RETURN) Transaction</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A transaction type relayed and mined by default in Bitcoin Core 0.9.0 and later that adds arbitrary data to a provably unspendable pubkey script that full nodes don’t have to store in their UTXO database.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Null data transaction</p></li>
+<li><p>OP_RETURN transaction</p></li>
+<li><p>Data carrier transaction</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>OP_RETURN (an opcode used in one of the outputs in an OP_RETURN transaction)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-null-data'>Null data transaction</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bitcoin/pull/2738'>Pull request implement null data transactions</a> — GitHub</p></li>
+</ul>
+
+<h2 id="op_return-transaction">OP_RETURN transaction</h2>
+
+<p><b>Null Data (OP_RETURN) Transaction</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A transaction type relayed and mined by default in Bitcoin Core 0.9.0 and later that adds arbitrary data to a provably unspendable pubkey script that full nodes don’t have to store in their UTXO database.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Null data transaction</p></li>
+<li><p>OP_RETURN transaction</p></li>
+<li><p>Data carrier transaction</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>OP_RETURN (an opcode used in one of the outputs in an OP_RETURN transaction)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-null-data'>Null data transaction</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bitcoin/pull/2738'>Pull request implement null data transactions</a> — GitHub</p></li>
+</ul>
+
+<h2 id="opcode">Opcode</h2>
+
+<p><b>Opcode</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Opcode</p></li>
+<li><p>Data-pushing opcode</p></li>
+<li><p>Non-data-pushing opcode</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#opcodes'>Opcodes</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Script'>List of opcodes</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="orphan-block">Orphan Block</h2>
+
+<p><b>Orphan Block</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Blocks whose parent block has not been processed by the local node, so they can’t be fully validated yet.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Orphan block</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Stale block</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#orphan-blocks'>Orphan blocks</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-stale-blocks'>What are orphaned and stale blocks?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="outpoint">Outpoint</h2>
+
+<p><b>Outpoint</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The data structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout).</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Outpoint</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Output (an entire output from a transaction)</p></li>
+<li><p>TxOut (same as output)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#outpoint'>Outpoint</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#tx'>Tx message (includes outpoint description)</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="output">Output</h2>
+
+<p><b>Output, Transaction Output, TxOut</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Output</p></li>
+<li><p>TxOut</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Outpoint (a reference to a particular output)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-output'>Output</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://bitcoin.org/en/developer-reference#raw-transaction-format'>TxOut</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Transaction#Output'>Output</a> — Bitcoin Wiki</p></li>
 </ul>
 
       </div>
