@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 14:13:25 2016-Sep-13</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 07:18:23 2016-Sep-19</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -8206,7 +8206,7 @@
 <li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#Variable_length_integer'>Variable length integers (compactSize)</a> — Bitcoin Wiki</p></li>
 </ul>
 
-<h2 id="compressed-public-keyy">Compressed Public Keyy</h2>
+<h2 id="compressed-public-key">Compressed Public Key</h2>
 
 <p><b>Compressed Public Key</b></p>
 
@@ -9732,6 +9732,473 @@
 <li><p><a href='https://bitcoin.org/en/developer-guide#term-output'>Output</a> — Bitcoin.org Developer Guide</p></li>
 <li><p><a href='https://bitcoin.org/en/developer-reference#raw-transaction-format'>TxOut</a> — Bitcoin.org Developer Reference</p></li>
 <li><p><a href='https://en.bitcoin.it/wiki/Transaction#Output'>Output</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="p2pkh-address">P2PKH Address</h2>
+
+<p><b>P2PKH Address, Pay To PubKey Hash</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A Bitcoin payment address comprising a hashed public key, allowing the spender to create a standard pubkey script that Pays To PubKey Hash (P2PKH).</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>P2PKH address</p></li>
+<li><p>P2PKH output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>P2PK output (an output paying a public key directly)</p></li>
+<li><p>P2SH address, P2SH output (an address comprising a hashed script, and its corresponding output)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-p2pkh'>P2PKH</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/32639/why-does-the-default-miner-implementation-use-pay-to-pubkey/32642#32642'>P2PKH versus P2PK</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="p2pkh-output">P2PKH Output</h2>
+
+<p><b>P2PKH Address, Pay To PubKey Hash</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A Bitcoin payment address comprising a hashed public key, allowing the spender to create a standard pubkey script that Pays To PubKey Hash (P2PKH).</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>P2PKH address</p></li>
+<li><p>P2PKH output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>P2PK output (an output paying a public key directly)</p></li>
+<li><p>P2SH address, P2SH output (an address comprising a hashed script, and its corresponding output)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-p2pkh'>P2PKH</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/32639/why-does-the-default-miner-implementation-use-pay-to-pubkey/32642#32642'>P2PKH versus P2PK</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="p2sh-address">P2SH Address</h2>
+
+<p><b>P2SH Address, Pay To Script Hash</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A Bitcoin payment address comprising a hashed script, allowing the spender to create a standard pubkey script that Pays To Script Hash (P2SH). The script can be almost any valid pubkey script.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>P2SH address</p></li>
+<li><p>P2SH output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>P2PK output (an output paying a public key directly)</p></li>
+<li><p>P2PKH address, P2PKH output (an address comprising a hashed pubkey, and its corresponding output)</p></li>
+<li><p>P2SH multisig (a particular instance of P2SH where the script uses a multisig opcode)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-p2sh'>P2SH</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki'>BIP16: pay to script hash</a> — Bitcoin Improvement Proposals</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Pay_to_script_hash'>P2SH</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="p2sh-multisig">P2SH Multisig</h2>
+
+<p><b>P2SH Multisig, P2SH Multisig Output</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A P2SH output where the redeem script uses one of the multisig opcodes. Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>P2SH multisig</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Multisig pubkey scripts (also called “bare multisig”, these multisig scripts don’t use P2SH encapsulation)</p></li>
+<li><p>P2SH (general P2SH, of which P2SH multisig is a specific instance that was special cased up until Bitcoin Core 0.10.0)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#escrow-and-arbitration'>P2SH multisig</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki'>BIP16: pay to script hash</a> — Bitcoin Improvement Proposals</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/23893/what-are-the-limits-of-m-and-n-in-m-of-n-multisig-addresses'>What are the limits of bare multisig and P2SH multisig?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="p2sh-output">P2SH Output</h2>
+
+<p><b>P2SH Address, Pay To Script Hash</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A Bitcoin payment address comprising a hashed script, allowing the spender to create a standard pubkey script that Pays To Script Hash (P2SH). The script can be almost any valid pubkey script.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>P2SH address</p></li>
+<li><p>P2SH output</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>P2PK output (an output paying a public key directly)</p></li>
+<li><p>P2PKH address, P2PKH output (an address comprising a hashed pubkey, and its corresponding output)</p></li>
+<li><p>P2SH multisig (a particular instance of P2SH where the script uses a multisig opcode)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-p2sh'>P2SH</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki'>BIP16: pay to script hash</a> — Bitcoin Improvement Proposals</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Pay_to_script_hash'>P2SH</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="parent-key">Parent Key</h2>
+
+<p><b>Parent Key, HD Wallet Parent Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, a key used to derive child keys. The key can be either a private key or a public key, and the key derivation may also require a chain code.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Parent key</p></li>
+<li><p>Parent public key</p></li>
+<li><p>Parent private key</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Public key (derived from a private key, not a parent key)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-parent-key'>Parent key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="parent-private-key">Parent Private Key</h2>
+
+<p><b>Parent Key, HD Wallet Parent Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, a key used to derive child keys. The key can be either a private key or a public key, and the key derivation may also require a chain code.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Parent key</p></li>
+<li><p>Parent public key</p></li>
+<li><p>Parent private key</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Public key (derived from a private key, not a parent key)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-parent-key'>Parent key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="parent-public-key">Parent Public Key</h2>
+
+<p><b>Parent Key, HD Wallet Parent Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In HD wallets, a key used to derive child keys. The key can be either a private key or a public key, and the key derivation may also require a chain code.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Parent key</p></li>
+<li><p>Parent public key</p></li>
+<li><p>Parent private key</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Public key (derived from a private key, not a parent key)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#hierarchical-deterministic-key-creation'>Parent key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="payment-protocol">Payment Protocol</h2>
+
+<p><b>Payment Protocol, Payment Request, BIP70</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The protocol defined in BIP70 (and other BIPs) which lets spenders get signed payment details from receivers.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Payment protocol</p></li>
+<li><p>Payment request</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>IP-to-IP payment protocol (an insecure, discontinued protocol included in early versions of Bitcoin)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#payment-protocol'>Payment Protocol</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki'>BIP70: payment protocol</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="payment-request">Payment Request</h2>
+
+<p><b>Payment Protocol, Payment Request, BIP70</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The protocol defined in BIP70 (and other BIPs) which lets spenders get signed payment details from receivers.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Payment protocol</p></li>
+<li><p>Payment request</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>IP-to-IP payment protocol (an insecure, discontinued protocol included in early versions of Bitcoin)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-payment-protocol'>Payment Protocol</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki'>BIP70: payment protocol</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="pow">POW</h2>
+
+<p><b>Proof Of Work</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A hash below a target value which can only be obtained, on average, by performing a certain amount of brute force work—therefore demonstrating proof of work.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Proof of work</p></li>
+<li><p>POW</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-proof-of-work'>Proof of work</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Proof_of_work'>Proof of work</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="private-extended-key">Private Extended Key</h2>
+
+<p><b>Extended Key, HD Wallet Extended Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In the context of HD wallets, a public key or private key extended with the chain code to allow them to derive child keys.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Extended key</p></li>
+<li><p>Public extended key</p></li>
+<li><p>Private extended key</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-extended-key'>Extended key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="private-key">Private Key</h2>
+
+<p><b>Private Key, ECDSA Private Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The private portion of a keypair which can create signatures that other people can verify using the public key.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Private key</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Public key (data derived from the private key)</p></li>
+<li><p>Parent key (a key used to create child keys, not necessarily a private key)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-private-key'>Private key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Private_key'>Private key</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/4675/what-is-a-private-key-and-a-public-key'>What is a private key?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="proof-of-work">Proof Of Work</h2>
+
+<p><b>Proof Of Work</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A hash below a target value which can only be obtained, on average, by performing a certain amount of brute force work—therefore demonstrating proof of work.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Proof of work</p></li>
+<li><p>POW</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-proof-of-work'>Proof of work</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Proof_of_work'>Proof of work</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="pubkey-script">Pubkey Script</h2>
+
+<p><b>Pubkey Script, ScriptPubKey</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent. Data for fulfilling the conditions can be provided in a signature script. Pubkey Scripts are called a scriptPubKey in code.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Pubkey script</p></li>
+<li><p>ScriptPubKey</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Pubkey (a public key, which can be used as part of a pubkey script but don’t provide a programmable authentication mechanism)</p></li>
+<li><p>Signature script (a script that provides data to the pubkey script)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#term-pubkey-script'>Pubkey script</a> — Bitcoin.org Developer Guide</li>
+</ul>
+
+<h2 id="public-extended-key">Public Extended Key</h2>
+
+<p><b>Extended Key, HD Wallet Extended Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>In the context of HD wallets, a public key or private key extended with the chain code to allow them to derive child keys.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Extended key</p></li>
+<li><p>Public extended key</p></li>
+<li><p>Private extended key</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-extended-key'>Extended key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki'>BIP32: hierarchical deterministic wallets</a> — Bitcoin Improvement Proposals</p></li>
+</ul>
+
+<h2 id="public-key">Public Key</h2>
+
+<p><b>Public Key, ECDSA Public Key</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Public key</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Private key (data from which the public key is derived)</p></li>
+<li><p>Parent key (a key used to create child keys, not necessarily a public key)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-public-key'>Public key</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/4675/what-is-a-private-key-and-a-public-key'>What is a public key?</a> — Bitcoin StackExchange</p></li>
 </ul>
 
       </div>
