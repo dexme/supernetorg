@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 12:11:24 2016-Sep-20</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 07:10:06 2016-Sep-21</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -10601,6 +10601,336 @@
 <li><p><a href='https://bitcoin.org/en/developer-guide#term-sequence-number'>Sequence number</a> — Bitcoin.org Developer Guide</p></li>
 <li><p><a href='https://en.bitcoin.it/wiki/Protocol_documentation#tx'>Tx message (describes sequence number)</a> — Bitcoin Wiki</p></li>
 <li><p><a href='http://bitcoin.stackexchange.com/questions/2025/what-is-txins-sequence'>What is the sequence number?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="sighash_all">SIGHASH_ALL</h2>
+
+<p><b>SIGHASH_ALL</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Default signature hash type which signs the entire transaction except any signature scripts, preventing modification of the signed parts.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>SIGHASH_ALL</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-sighash-all'>SIGHASH_ALL</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/OP_CHECKSIG'>OP_CHECKSIG</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Contract#Theory'>Contracts</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="sighash_anyonecanpay">SIGHASH_ANYONECANPAY</h2>
+
+<p><b>SIGHASH_ANYONECANPAY</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A signature hash type which signs only the current input.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>SIGHASH_ANYONECANPAY</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>SIGHASH_SINGLE (which signs this input, its corresponding output, and other inputs partially)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-sighash-all'>SIGHASH_ANYONECANPAY</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/OP_CHECKSIG'>OP_CHECKSIG</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Contract#Theory'>Contracts</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="sighash_none">SIGHASH_NONE</h2>
+
+<p><b>SIGHASH_NONE</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Signature hash type which only signs the inputs, allowing anyone to change the outputs however they’d like.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>SIGHASH_NONE</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-sighash-none'>SIGHASH_NONE</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/OP_CHECKSIG'>OP_CHECKSIG</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Contract#Theory'>Contracts</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="sighash_single">SIGHASH_SINGLE</h2>
+
+<p><b>SIGHASH_SINGLE</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Signature hash type that signs the output corresponding to this input (the one with the same index value), this input, and any other inputs partially. Allows modification of other outputs and the sequence number of other inputs.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>SIGHASH_SINGLE</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs this single input)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-sighash-single'>SIGHASH_SINGLE</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/OP_CHECKSIG'>OP_CHECKSIG</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Contract#Theory'>Contracts</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="signature">Signature</h2>
+
+<p><b>Signature, ECDSA Signature</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Signature</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-signature'>Signature</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm'>ECDSA</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm'>ECDSA</a> — Wikipedia</p></li>
+</ul>
+
+<h2 id="signature-hash">Signature Hash</h2>
+
+<p><b>Signature Hash</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A flag to Bitcoin signatures that indicates what parts of the transaction the signature signs. (The default is SIGHASH_ALL.) The unsigned parts of the transaction may be modified.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Signature hash</p></li>
+<li><p>Sighash</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Signed hash (a hash of the data to be signed)</p></li>
+<li><p>Transaction malleability / transaction mutability (although non-default sighash flags do allow optional malleability, malleability comprises any way a transaction may be mutated)</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-signature-hash'>Signature hash</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/OP_CHECKSIG'>OP_CHECKSIG</a> — Bitcoin Wiki</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Contract#Theory'>Contracts</a> — Bitcoin Wiki</p></li>
+</ul>
+
+<h2 id="signature-script">Signature Script</h2>
+
+<p><b>Signature Script, ScriptSig</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Signature script</p></li>
+<li><p>ScriptSig</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>ECDSA signature (a signature, which can be used as part of a pubkey script in addition to other data)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><a href='https://bitcoin.org/en/developer-guide#term-signature-script'>Signature script</a> — Bitcoin.org Developer Guide</li>
+</ul>
+
+<h2 id="simplified-payment-verification">Simplified Payment Verification</h2>
+
+<p><b>SPV, Simplified Payment Verification</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A method for verifying particular transactions were included in a block without downloading the entire block. The method is used by some lightweight Bitcoin clients.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>SPV</p></li>
+<li><p>Simplified Payment Verification</p></li>
+<li><p>Lightweight client</p></li>
+<li><p>Thin client</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#simplified-payment-verification-spv'>SPV</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Thin_Client_Security'>Thin client security</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/32529/what-is-a-thin-client'>What is a thin client?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="soft-fork">Soft Fork</h2>
+
+<p><b>Soft Fork, Soft-Forking Change</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A temporary fork in the block chain which commonly occurs when miners using non-upgraded nodes violate a new consensus rule their nodes don’t know about.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Soft fork</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li><p>Fork (a regular fork where all nodes follow the same consensus rules, so the fork is resolved once one chain has more proof of work than another)</p></li>
+<li><p>Hard fork (a permanent divergence in the block chain caused by non-upgraded nodes not following new consensus rules)</p></li>
+<li><p>Software fork (when one or more developers permanently develops a codebase separately from other developers)</p></li>
+<li><p>Git fork (when one or more developers temporarily develops a codebase separately from other developers</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-soft-fork'>Soft fork</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Softfork'>Soft fork</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/30817/what-is-a-soft-fork'>What is a soft fork?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="spv">SPV</h2>
+
+<p><b>SPV, Simplified Payment Verification</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A method for verifying particular transactions were included in a block without downloading the entire block. The method is used by some lightweight Bitcoin clients.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>SPV</p></li>
+<li><p>Simplified Payment Verification</p></li>
+<li><p>Lightweight client</p></li>
+<li><p>Thin client</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#simplified-payment-verification-spv'>SPV</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='https://en.bitcoin.it/wiki/Thin_Client_Security'>Thin client security</a> — Bitcoin Wiki</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/32529/what-is-a-thin-client'>What is a thin client?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="stale-block">Stale Block</h2>
+
+<p><b>Stale Block</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Blocks which were successfully mined but which aren’t included on the current best block chain, likely because some other block at the same height had its chain extended first.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Stale block</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Orphan block (a block whose previous (parent) hash field points to an unknown block, meaning the orphan can’t be validated)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#term-stale-block'>Stale blocks</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-stale-blocks'>What are orphaned and stale blocks?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="standard-transaction">Standard Transaction</h2>
+
+<p><b>Standard Transaction</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A transaction that passes Bitcoin Core’s IsStandard() and IsStandardTx() tests. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Standard Transaction</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-guide#standard-transactions'>Standard transactions</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/5664/will-general-non-standard-transactions-ever-be-allowed'>Will general non-standard transactions ever be allowed?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="start-string">Start String</h2>
+
+<p><b>Start String, Network Magic</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>Four defined bytes which start every message in the Bitcoin P2P protocol to allow seeking to the next message.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Start string</p></li>
+<li><p>Network magic</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href='https://bitcoin.org/en/developer-reference#term-start-string'>Start string</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href='http://bitcoin.stackexchange.com/questions/2337/how-was-the-magic-network-id-value-chosen'>How was the start string chosen?</a> — Bitcoin StackExchange</p></li>
 </ul>
 
       </div>
