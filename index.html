@@ -113,7 +113,7 @@
       </div>
         <ul class="toc-footer">
             <li><a href='http://supernet.org'>SuperNET.org</a></li>
-            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 16:52:29 2016-Sep-22</li>
+            <li><a href='https://phabricator.supernet.org/'>SupernET Developer Network</a></li><li>Updated: UTC 12:11:55 2016-Sep-27</li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -10931,6 +10931,145 @@
 <ul>
 <li><p><a href='https://bitcoin.org/en/developer-reference#term-start-string'>Start string</a> — Bitcoin.org Developer Reference</p></li>
 <li><p><a href='http://bitcoin.stackexchange.com/questions/2337/how-was-the-magic-network-id-value-chosen'>How was the start string chosen?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="target">Target</h2>
+
+<p><b>nBits, Target Threshold</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>nBits</p></li>
+<li><p>Target</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Difficulty (a number measuring the difficulty of finding a header hash relative to the difficulty of finding a header hash with the easiest target)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href=''>Target</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href=''>nBits</a> — Bitcoin.org Developer Reference</p></li>
+<li><p><a href=''>Target</a> — Bitcoin Wiki</p></li>
+<li><p><a href=''>How is the target section of the block header calculated?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="testnet">Testnet</h2>
+
+<p><b>Testnet, Testing Network</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A global testing environment in which developers can obtain and spend satoshis that have no real-world value on a network that is very similar to the Bitcoin mainnet.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li>Testnet</li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Regtest (a local testing environment where developers can control block generation)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href=''>Testnet mode</a> — Bitcoin.org Developer Examples</p></li>
+<li><p><a href=''>Testnet</a> — Bitcoin Wiki</p></li>
+<li><p><a href=''>Get testnet bitcoins</a> — Testnet Faucet</p></li>
+</ul>
+
+<h2 id="thin-client">Thin Client</h2>
+
+<p><b>SPV, Simplified Payment Verification</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>A method for verifying particular transactions were included in a block without downloading the entire block. The method is used by some lightweight Bitcoin clients.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>SPV</p></li>
+<li><p>Simplified Payment Verification</p></li>
+<li><p>Lightweight client</p></li>
+<li><p>Thin client</p></li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href=''>SPV</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href=''>Thin client security</a> — Bitcoin Wiki</p></li>
+<li><p><a href=''>What is a thin client?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<h2 id="transaction-fee">Transaction Fee</h2>
+
+<p><b>Transaction Fee, Miner Fee</b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Transaction fee</p></li>
+<li><p>Miners fee</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>Minimum relay fee (the lowest fee a transaction must pay to be accepted into the memory pool and relayed by Bitcoin Core nodes)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href=''>Transaction fee</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href=''>Transaction fees</a> — Bitcoin Wiki</p></li>
+<li><p><a href=''>How to calculate transaction fees before sending?</a> — Bitcoin StackExchange</p></li>
+</ul>
+
+<p><b></b></p>
+
+<h3 id="definition">Definition</h3>
+
+<p>The ability of someone to change (mutate) unconfirmed transactions without making them invalid, which changes the transaction’s txid, making child transactions invalid.</p>
+
+<h3 id="synonyms">Synonyms</h3>
+
+<ul>
+<li><p>Transaction malleability</p></li>
+<li><p>Transaction mutability</p></li>
+</ul>
+
+<h3 id="not-to-be-confused-with">Not To Be Confused With</h3>
+
+<ul>
+<li>BIP62 (a proposal for an optional new transaction version that reduces the set of known mutations for common transactions)</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+<li><p><a href=''>Transaction malleability</a> — Bitcoin.org Developer Guide</p></li>
+<li><p><a href=''>Transaction malleability</a> — Bitcoin Wiki</p></li>
+<li><p><a href=''>BIP62: dealing with malleability</a> — Bitcoin Improvement Proposals</p></li>
 </ul>
 
       </div>
